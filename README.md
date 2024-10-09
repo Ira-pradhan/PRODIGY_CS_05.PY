@@ -16,7 +16,9 @@ Common Uses of a Network Packet Analyzer:
 
 4. Educational purposes: Helps students and network engineers understand networking fundamentals.
 
-HOW IT WORKS:
+How It Works:
 Packet Capture with Scapy: The sniff() function from scapy is used to capture packets. It takes prn=packet_callback as a parameter, which means that for every captured packet, the packet_callback function will be called. IP Layer Analysis: The tool checks if the packet contains an IP layer, and if so, extracts and prints the source and destination IP addresses and the protocol number. TCP/UDP/ICMP Protocol Analysis: Depending on the protocol (TCP, UDP, ICMP), it further extracts and prints information such as port numbers for TCP and UDP, or the type and code for ICMP. Payload Display: The tool also prints the raw payload data in the packet, which can be useful for further analysis.
+
+
 Repository Contents:
 PRODIGY_CS_05.py : The main Python script containing the implementation of the Network Packet Analyzer. README.md : This file, providing an overview of the task and the project
